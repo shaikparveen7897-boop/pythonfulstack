@@ -29,3 +29,6 @@ registerForm.addEventListener("submit", function (event){
     console.log("Name: ",name);
     console.log("email: ",email);
     console.log("password: ",password);});
+
+
+
