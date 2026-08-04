@@ -18,6 +18,15 @@ def index():
 @app.route("/trainers")
 def trainers():
     return render_template("trainers.html")
-@app
+@app.route('/register',methods=["POST","GET"])
+def register():
+    if request.method=="POST":
+        name=request.form["name"]
+        email=request.form["email"]
+        password=request.form["pasword"]
+        dob=request.form["dob"]
+        gender=request.form["gender"]
+        course=request.form["course"]
+        return render_template("register.html")
 if __name__=='__main__':
     app.run (debug=True)

@@ -12,16 +12,22 @@
     <header>Register</header>
     <main>
          <h2>Student Registration </h2>
-        <form id="registerForm">
+        <form id="registerForm" method="POST">
             <label>Full Name</label><br>
-            <input type="text" placeholder="Enter Your Name" id="name"><br>
+            <input type="text" placeholder="Enter Your Name" id="name" name="name"><br>
             <label>Email</label><br>
-            <input type="email" placeholder="Enter your email" id="email"><br>
+            <input type="email" placeholder="Enter your email" id="email" name="email"><br>
             <label >Password</label><br>
             <label>Password</label><br>
-            <input type="password" placeholder="Enter Your Password" id="password"><br>
+            <input type="password" placeholder="Enter Your Password" id="password" name="password"><br>
             <label>Date of Birth</label><br>
-            <input type="date" placeholder="DOB"><br>
+            <input type="date" placeholder="DOB" name="dob"><br>
+            <label>Gender</label><br>
+            <input type="radio" name="gender" value="male">male
+            <input type="radio" name="gender" value="female">female<br><br>
+            <label>slect course</label>
+            <br>
+            <select name="course"></select>
             <h2>Student Registration </h2>
             <label>Select Course</label>
             <br>
